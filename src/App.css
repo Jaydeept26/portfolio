@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+:root {
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #033f47;
+  --color-base2: #022a30;
+  --color-brand: #e0f780;
+  --color-brand2: #deff58;
+  --sidbar-width: 240px;
+  --font-base: "Bai Jamjuree";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.maincon {
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+.ph {
+  /* background-color: 2; */
+
+  width: 170px;
+  height: 170px;
+  background-image: url("D:\tops jd\react_portfolio\jd_portfolio\src\components\images\\IM.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px var(--color-brand) solid;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  /* padding: 20px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .ph img {
+  height: 10%;
+  width: 10%;
+} */
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* width: 20%; */
+  height: 100vh;
+  background-color: var(--color-base);
+}
+.nav-link {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: var(--color-brand);
+  transition: all 0.4s ease;
+}
+.container {
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav {
+  flex-direction: column !important;
+}
+.logoname {
+  color: var(--color-brand);
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+li {
+  text-align: center;
+  padding-top: 60%;
+  font-size: larger;
+  font-weight: bold;
 }
